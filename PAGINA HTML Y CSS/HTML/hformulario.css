@@ -1,0 +1,93 @@
+/* Establecemos un fondo suave para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D2F1F3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('w9formulario.png'); /* Ruta a tu logo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilo para el contenedor del formulario */
+#form {
+    background-color: #20E1EE(255, 255, 255, 0.8); /* Fondo blanco translúcido para ver el logo */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Títulos del formulario */
+#form h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para los campos de entrada */
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para cuando los inputs están enfocados */
+.field input[type="text"]:focus,
+.field input[type="email"]:focus,
+.field input[type="tel"]:focus {
+    border-color: #5cb85c;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Estilo para el botón de envío */
+#button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover para el botón */
+#button:hover {
+    background-color: #4cae4c;
+}
+
+/* Efecto para el formulario cuando el mouse pasa por encima */
+#form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

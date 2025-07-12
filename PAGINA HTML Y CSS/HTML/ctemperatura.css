@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo más suave */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Asegura que el logo y el título estén distribuidos */
+    background-color: #F74428;
+    color: white;
+    padding: 15px 30px; /* Mayor espacio en el header */
+}
+
+.header .logo {
+    max-width: 80px; /* Tamaño del logo más grande */
+    height: auto;
+}
+
+.header h1 {
+    font-size: 2rem; /* Aumentamos el tamaño del título */
+    margin: 0;
+}
+
+/* Sección principal */
+.content {
+    display: flex;
+    flex: 1; /* Para que ocupe el espacio restante */
+    padding: 20px;
+    gap: 30px; /* Mayor espacio entre las secciones */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* Texto descriptivo */
+.text-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar la sección */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-right: 20px;
+}
+
+.text-section h2 {
+    color: #00796b;
+    font-size: 1.8rem; /* Aumentar el tamaño del subtítulo */
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    line-height: 1.8; /* Mejor legibilidad */
+    font-size: 1.1rem;
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+.text-section strong {
+    color: #00796b;
+}
+
+/* Contenedor del mapa */
+.map-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px; /* Mayor espacio en el footer */
+    font-size: 1rem; /* Aumentar tamaño de la fuente en el footer */
+    margin-top: auto; /* Asegura que el footer siempre quede al final */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 20px; /* Menos espacio en pantallas pequeñas */
+    }
+
+    .text-section {
+        padding: 15px;
+        margin-right: 0;
+    }
+
+    .map-container {
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.3rem; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+
+    .header .logo {
+        max-width: 60px; /* Ajustar tamaño del logo en pantallas pequeñas */
+    }
+}

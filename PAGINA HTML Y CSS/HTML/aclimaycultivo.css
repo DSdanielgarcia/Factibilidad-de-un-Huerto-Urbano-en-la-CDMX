@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;               
+    flex-direction: column;      
+    height: 100vh;               
+}
+
+/* Header */
+header {
+    background-color: #2e8b57;
+    padding: 1.5em 0;            /* Mayor padding para un encabezado más destacado */
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-container .logo {
+    max-width: 180px;            /* Aumenta el tamaño del logo */
+}
+
+/* Main content */
+.clima-cultivo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;               /* Aumenta el padding para dar más espacio alrededor del contenido */
+    flex: 1;                     /* Esto permite que el contenido principal ocupe el espacio disponible */
+    flex-wrap: wrap;             /* Permite que los elementos se ajusten si es necesario */
+}
+
+/* Contenedor principal */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;             /* Asegura que el contenedor ocupe todo el espacio disponible */
+    gap: 30px;                   /* Aumenta el espacio entre las secciones */
+}
+
+/* Resumen */
+.resumen {
+    flex: 1;                     /* Hace que el resumen ocupe el espacio disponible */
+    padding: 30px;               /* Aumenta el padding dentro de la sección */
+    background: #f9f9f9;
+    border: 1px solid #ddd;      /* Borde más sutil (gris claro) */
+    border-radius: 12px;         /* Bordes más redondeados */
+    height: 100%;                /* Asegura que ocupe toda la altura disponible */
+}
+
+.resumen h2 {
+    color: #333;
+    font-size: 2rem;             /* Aumenta el tamaño del título */
+    margin-bottom: 20px;         /* Aumenta el margen inferior */
+}
+
+.resumen p {
+    line-height: 1.8;            /* Aumenta la altura de las líneas para mejor legibilidad */
+    color: #555;
+    font-size: 1.1rem;           /* Aumenta el tamaño de la fuente del párrafo */
+    margin-bottom: 15px;         /* Añade más espacio entre los párrafos */
+}
+
+/* Gráfica */
+.grafica {
+    flex: 1;                     /* Hace que la gráfica ocupe el espacio disponible */
+    padding: 30px;               /* Aumenta el padding dentro de la sección */
+    background: #fff;
+    border: 1px solid #ddd;      /* Borde más sutil (gris claro) */
+    border-radius: 12px;         /* Bordes más redondeados */
+    height: 100%;                /* Asegura que ocupe toda la altura disponible */
+}
+
+.grafica h3 {
+    color: #333;
+    margin-bottom: 15px;         /* Aumenta el margen inferior */
+    font-size: 1.5rem;           /* Aumenta el tamaño del subtítulo */
+}
+
+iframe {
+    width: 100%;
+    height: 650px;               /* Aumenta la altura del iframe */
+    border: none;
+    border-radius: 12px;         /* Redondea los bordes del iframe */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;               
+    font-size: 1rem;             
+    margin-top: auto;           
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .clima-cultivo {
+        flex-direction: column;   
+        padding: 20px;           
+    }
+
+    .resumen, .grafica {
+        max-width: 100%;           
+    }
+
+    iframe {
+        height: 500px;            
+    }
+}

@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Hacer que el cuerpo ocupe toda la altura */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #07D0F3;
+    padding: 20px; /* Aumenta el padding para un header más amplio */
+    text-align: center;
+}
+
+.logo {
+    max-width: 180px; /* Aumenta el tamaño máximo del logo */
+    height: auto;
+}
+
+/* Contenedor principal */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Sin límite de ancho máximo */
+    margin: 30px auto; /* Mayor margen para separar del header */
+    background: white;
+    padding: 30px; /* Aumenta el padding para más espacio alrededor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    gap: 30px; /* Aumenta el espacio entre las secciones */
+    flex: 1; /* Esto permite que el contenido ocupe todo el espacio disponible */
+    border-radius: 8px; /* Bordes redondeados en el contenedor */
+}
+
+/* Resumen */
+.resumen {
+    flex: 1; /* Hace que el resumen ocupe el espacio disponible */
+    padding-right: 20px; /* Ajuste de padding derecho para mejorar el espaciado */
+    padding-left: 20px;  /* Añade algo de padding izquierdo */
+    height: 100%; /* Hace que el resumen ocupe toda la altura disponible */
+    background: #f9f9f9;
+    border: 2px solid #ddd; /* Borde en color gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding-top: 20px;    /* Agrega espacio superior */
+    padding-bottom: 20px; /* Agrega espacio inferior */
+}
+
+.resumen h2 {
+    color: #00796b;
+    font-size: 2rem; /* Aumenta el tamaño de los títulos */
+    margin-bottom: 20px; /* Más espacio debajo del título */
+}
+
+.resumen p {
+    line-height: 1.8; /* Aumenta el interlineado para mayor legibilidad */
+    margin-bottom: 15px; /* Mayor espacio entre los párrafos */
+    font-size: 1.1rem; /* Aumenta el tamaño del texto */
+}
+
+/* Gráfica */
+.grafica {
+    flex: 1; /* Hace que la gráfica ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    background: #fff;
+    border: 2px solid #ddd; /* Borde en color gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding-top: 20px;    /* Agrega espacio superior */
+    padding-bottom: 20px; /* Agrega espacio inferior */
+}
+
+.grafica h3 {
+    color: #00796b;
+    font-size: 1.8rem; /* Aumenta el tamaño del subtítulo */
+    margin-bottom: 20px; /* Más espacio debajo del subtítulo */
+}
+
+iframe {
+    width: 100%;
+    height: 650px; /* Aumenta la altura de la gráfica */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Asegura que la gráfica no esté pegada al título */
+}
+
+/* Estilos para la pantalla más pequeña */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resumen {
+        padding-right: 0; /* Elimina el padding derecho para pantallas pequeñas */
+        padding-left: 20px; /* Agrega un poco de espacio izquierdo */
+        max-width: 100%; /* Asegura que ocupe el 100% del ancho */
+        height: auto; /* Elimina la altura fija */
+        border: 2px solid #ddd; /* Se mantiene el borde en pantallas pequeñas */
+    }
+
+    iframe {
+        height: 400px; /* Reduce la altura de la gráfica en pantallas pequeñas */
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px; /* Aumenta el padding para un footer más espacioso */
+    font-size: 1rem; /* Aumenta el tamaño de la fuente en el footer */
+    margin-top: auto; /* Esto asegura que el footer se empuje al final */
+}

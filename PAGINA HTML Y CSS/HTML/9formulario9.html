@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hformulario.css">
+    <title>Formulario</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('uUlH1XRtgV0JCa-rQ')
+  </script>
+</head>
+<body>
+
+  <form id="form">
+    <div class="field">
+      <label for="nombre">nombre</label>
+      <input type="text" name="nombre" id="nombre">
+    </div>
+    <div class="field">
+      <label for="apellido">apellido</label>
+      <input type="text" name="apellido" id="apellido">
+    </div>
+    <div class="field">
+      <label for="mensaje">mensaje</label>
+      <input type="text" name="mensaje" id="mensaje">
+    </div>
+    <div class="field">
+      <label for="email">email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="field">
+      <label for="telefono">telefono</label>
+      <input type="text" name="telefono" id="telefono">
+    </div>
+  
+    <input type="submit" id="button" value="Send Email" >
+  </form>
+    <script src="app.js"></script>
+</body>
+</html>
